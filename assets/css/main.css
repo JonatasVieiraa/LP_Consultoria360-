@@ -1,5 +1,22 @@
 @import url(fontawesome-all.min.css);
 
+* {
+	box-sizing: border-box;
+	/* Inclui padding e border na largura e altura */
+	max-width: 100%; /* Impede que algum elemento ultrapasse 100% da largura */
+}
+
+html,
+body {
+	overflow-x: hidden;
+	/* Oculta o scroll horizontal */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* Garante que a largura fique limitada a 100% */
+}
+
+
 :root {
 	--bg-color: #1b1f22;
 	--text-color: #ffffff;
@@ -22,6 +39,7 @@ li {
 	padding: 0;
 	border: 0;
 	font-family: "Libre Baskerville", serif;
+
 }
 
 article,
@@ -65,7 +83,7 @@ h2 {
 	font-weight: bold;
 	margin: 0 0 1rem 0;
 	text-transform: uppercase;
-	
+
 }
 
 h1 {
@@ -73,7 +91,8 @@ h1 {
 	line-height: 1.3;
 	letter-spacing: 0.5rem;
 }
-h2{
+
+h2 {
 	font-size: 1%;
 	line-height: 1.3;
 	letter-spacing: 0.5rem;
@@ -142,7 +161,7 @@ h2{
 	border-radius: 0.5em;
 	transition: background 0.3s;
 	animation: pulse 2s infinite;
-	
+
 }
 
 @keyframes pulse {
@@ -367,7 +386,7 @@ h3 {
 	border-color: #ffffff;
 	border-top-width: 3px;
 	border-bottom-width: 3px;
-	max-width: 60%;
+	max-width: 70%;
 }
 
 #header .content .inner {
@@ -375,7 +394,7 @@ h3 {
 	transition-delay: 0.25s;
 	padding: 2.5rem 2rem;
 	max-height: 72em;
-	
+
 }
 
 #header .content .inner> :last-child {
@@ -539,14 +558,14 @@ body.is-preload #header .content .inner {
 
 /* Footer */
 #footer {
-	
-	padding: 30px 0; 
+
+	padding-top: 20px;
 	text-align: center;
 }
 
 #footer .footer-container {
-	max-width: 1200px; 
-	margin: 0 auto; 
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 body.is-article-visible #footer {
