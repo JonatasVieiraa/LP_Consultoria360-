@@ -92,11 +92,7 @@ h1 {
 	letter-spacing: 0.5rem;
 }
 
-h2 {
-	font-size: 1%;
-	line-height: 1.3;
-	letter-spacing: 0.5rem;
-}
+
 
 /* Image */
 
@@ -142,7 +138,7 @@ h2 {
 .cta_container {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .button {
