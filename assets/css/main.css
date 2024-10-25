@@ -367,7 +367,7 @@ h2,
 h3 {
 	color: #CDAD7D;
 	font-size: 3rem;
-	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.5);
+	text-shadow: 6px 6px 10px rgba(0, 0, 0, 0), 0 0 15px rgba(0, 0, 0, 0);
 
 }
 
@@ -408,7 +408,7 @@ h3 {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
-    gap: 8px; /* Reduzido de 10px para 8px para dar mais espaço */
+    gap: 10px; /* Reduzido de 10px para 8px para dar mais espaço */
     flex-wrap: nowrap; /* Garante que os botões fiquem em uma linha */
     width: 100%;
     max-width: 1200px; /* Adiciona um max-width para controle em telas muito largas */
@@ -420,14 +420,15 @@ h3 {
     flex: 1; /* Faz com que cada item ocupe espaço igual */
 }
 
+
 .custom-button {
     display: block; /* Mudado para block para ocupar todo o espaço do li */
-    padding: 0.7rem 0.5rem; /* Reduzido o padding horizontal */
+    padding: 0.7rem 0.8rem; /* Reduzido o padding horizontal */
     border: 2px solid #ffffff;
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 0.1rem; /* Reduzido de 0.15rem para 0.1rem */
-    font-size: 0.9rem; /* Reduzido de 1rem para 0.9rem */
+    font-size: 1rem; /* Reduzido de 1rem para 0.9rem */
     font-weight: bold;
     color: #CDAD7D;
     text-align: center;
@@ -436,7 +437,7 @@ h3 {
     position: relative;
     overflow: hidden;
     white-space: nowrap; /* Evita quebra de linha no texto */
-    text-overflow: ellipsis; /* Adiciona ... se o texto for muito longo */
+    
 }
 
 .custom-button:before {
@@ -734,11 +735,11 @@ body.is-preload #footer {
 
 	/* Ajuste nos botões */
 	.custom-nav ul li {
-			max-width: 220px;
+			max-width: 400px;
 	}
 
 	.custom-button {
-			padding: 0.6rem 1rem;
+			padding: 0.6rem 2rem;
 			font-size: 0.85rem;
 	}
 }
@@ -746,17 +747,14 @@ body.is-preload #footer {
 /* Mobile (480px) */
 @media screen and (max-width: 480px) {
 	/* Redução máxima de fontes */
-	h1 {
-			font-size: 0rem;
-		
-	}
+	
 
 	h2 {
 			font-size: 1.1rem;
 	}
 
 	p {
-			font-size: 1.1rem;
+			font-size: 0.9rem;
 	}
 
 	/* Ajustes finais de layout */
@@ -765,13 +763,14 @@ body.is-preload #footer {
 			transform: translateY(-9rem);
 	}
 
-	#header .content .inner {
-			padding: 1.5rem 1rem;
+	#header .content .inner h1 {
+		font-size: 1.6rem;
+			
 	}
 
 	/* Botões mais compactos */
 	.custom-nav ul li {
-			max-width: 200px;
+			max-width: 300px;
 	}
 
 	.custom-button {
