@@ -3,7 +3,8 @@
 * {
 	box-sizing: border-box;
 	/* Inclui padding e border na largura e altura */
-	max-width: 100%; /* Impede que algum elemento ultrapasse 100% da largura */
+	max-width: 100%;
+	/* Impede que algum elemento ultrapasse 100% da largura */
 }
 
 html,
@@ -403,41 +404,50 @@ h3 {
 
 /* Estilos principais para a navegação */
 .custom-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    gap: 10px; /* Reduzido de 10px para 8px para dar mais espaço */
-    flex-wrap: nowrap; /* Garante que os botões fiquem em uma linha */
-    width: 100%;
-    max-width: 1200px; /* Adiciona um max-width para controle em telas muito largas */
-    margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	gap: 10px;
+	/* Reduzido de 10px para 8px para dar mais espaço */
+	flex-wrap: nowrap;
+	/* Garante que os botões fiquem em uma linha */
+	width: 100%;
+	max-width: 1200px;
+	/* Adiciona um max-width para controle em telas muito largas */
+	margin: 0 auto;
 }
 
 .custom-nav ul li {
-    padding: 0;
-    flex: 1; /* Faz com que cada item ocupe espaço igual */
+	padding: 0;
+	flex: 1;
+	/* Faz com que cada item ocupe espaço igual */
 }
 
 
 .custom-button {
-    display: block; /* Mudado para block para ocupar todo o espaço do li */
-    padding: 0.7rem 0.8rem; /* Reduzido o padding horizontal */
-    border: 2px solid #ffffff;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem; /* Reduzido de 0.15rem para 0.1rem */
-    font-size: 1rem; /* Reduzido de 1rem para 0.9rem */
-    font-weight: bold;
-    color: #CDAD7D;
-    text-align: center;
-    transition: all 0.3s ease;
-    background-color: transparent;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap; /* Evita quebra de linha no texto */
-    
+	display: block;
+	/* Mudado para block para ocupar todo o espaço do li */
+	padding: 0.7rem 0.8rem;
+	/* Reduzido o padding horizontal */
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	/* Reduzido de 0.15rem para 0.1rem */
+	font-size: 1rem;
+	/* Reduzido de 1rem para 0.9rem */
+	font-weight: bold;
+	color: #CDAD7D;
+	text-align: center;
+	transition: all 0.3s ease;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	/* Evita quebra de linha no texto */
+
 }
 
 .custom-button:before {
@@ -564,7 +574,6 @@ body.is-preload #header .content .inner {
 
 /* Footer */
 #footer {
-
 	padding-top: 20px;
 	text-align: center;
 }
@@ -572,6 +581,33 @@ body.is-preload #header .content .inner {
 #footer .footer-container {
 	max-width: 1100px;
 	margin: 0 auto;
+}
+
+#footer a {
+	color: #b9babb;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #fff4b5;
+}
+
+#footer .menu-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+#footer ul.menu {
+	margin: 0;
+	gap: 20px;
+	display: flex;
+}
+
+#footer ul.menu li {
+	color: #b9babb;
+	font-size: 0.9em;
+	list-style: none;
 }
 
 body.is-article-visible #footer {
@@ -587,207 +623,220 @@ body.is-preload #footer {
    Media Queries
    ========================================================================== */
 
-	 @media screen and (max-width: 1680px) {
-    #wrapper {
-        padding: 3rem 2rem;
-    }
-    
-    /* Ajuste para conteúdo central */
-    #header .content {
-        max-width: 80%; /* Aumentado de 70% para melhor uso do espaço */
-    }
-    
-    /* Ajuste para parágrafos */
-    p {
-        font-size: 1.6rem; /* Reduzido de 1.8rem */
-    }
+@media screen and (max-width: 1680px) {
+	#wrapper {
+		padding: 3rem 2rem;
+	}
+
+	/* Ajuste para conteúdo central */
+	#header .content {
+		max-width: 80%;
+		/* Aumentado de 70% para melhor uso do espaço */
+	}
+
+	/* Ajuste para parágrafos */
+	p {
+		font-size: 1.6rem;
+		/* Reduzido de 1.8rem */
+	}
 }
+
 @media screen and (max-width: 980px) {
 	#header .content p br {
-			display: none;
+		display: none;
 	}
-	
+
 	/* Ajustes adicionais necessários */
 	#header .content {
-			max-width: 90%;
+		max-width: 90%;
 	}
-	
+
 	/* Ajuste do botão CTA */
 	.button {
-			--width: 180px; /* Reduzido de 210px */
-			--height: 60px; /* Reduzido de 70px */
+		--width: 180px;
+		/* Reduzido de 210px */
+		--height: 60px;
+		/* Reduzido de 70px */
 	}
-	
+
 	/* Ajuste de tipografia */
 	h1 {
-			font-size: 2rem; /* Reduzido de 2.25rem */
-			letter-spacing: 0.4rem;
+		font-size: 2rem;
+		/* Reduzido de 2.25rem */
+		letter-spacing: 0.4rem;
 	}
-	
+
 	/* Ajuste do main article */
 	#main article {
-			width: 35rem; /* Reduzido de 40rem */
+		width: 35rem;
+		/* Reduzido de 40rem */
 	}
 }
+
 /* Tablet Large (850px) */
 @media screen and (max-width: 850px) {
+
 	/* Ajustes de tipografia */
-	body, input, select, textarea {
-			font-size: 0.9rem;
+	body,
+	input,
+	select,
+	textarea {
+		font-size: 0.9rem;
 	}
 
 	h1 {
-			font-size: 1.8rem;
-			letter-spacing: 0.3rem;
+		font-size: 1.8rem;
+		letter-spacing: 0.3rem;
 	}
 
 	h2 {
-			font-size: 1.4rem;
+		font-size: 1.4rem;
 	}
 
 	p {
-			font-size: 1.4rem;
-			margin: 0 0 1.5rem 0;
+		font-size: 1.4rem;
+		margin: 0 0 1.5rem 0;
 	}
 
 	/* Layout central */
 	#header {
-			padding: 1rem 0;
+		padding: 1rem 0;
 	}
 
 	#header .logo {
-			height: 120px;
-			transform: translateY(-8rem);
+		height: 120px;
+		transform: translateY(-8rem);
 	}
 
 	#header .content {
-			max-width: 95%;
+		max-width: 95%;
 	}
 
 	#header .content .inner {
-			padding: 2rem 1.5rem;
+		padding: 2rem 1.5rem;
 	}
 
 	/* Navegação */
 	.custom-nav ul {
-			flex-direction: column;
-			align-items: center;
-			gap: 15px;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
 	}
 
 	.custom-nav ul li {
-			width: 100%;
-			max-width: 250px;
+		width: 100%;
+		max-width: 250px;
 	}
 
 	.custom-button {
-			width: 100%;
-			padding: 0.7rem 1.2rem;
-			font-size: 0.9rem;
+		width: 100%;
+		padding: 0.7rem 1.2rem;
+		font-size: 0.9rem;
 	}
 
 	/* Botão CTA */
 	.button {
-			--width: 170px;
-			--height: 55px;
-			--tooltip-height: 45px;
-			--tooltip-width: 85px;
-			--gap-between-tooltip-to-button: 15px;
+		--width: 170px;
+		--height: 55px;
+		--tooltip-height: 45px;
+		--tooltip-width: 85px;
+		--gap-between-tooltip-to-button: 15px;
 	}
 
 	.text {
-			font-size: 0.9rem;
+		font-size: 0.9rem;
 	}
 
 	/* Main Articles */
 	#main article {
-			width: 90%;
-			max-width: 35rem;
-			padding: 3rem 2rem 1rem;
-			font-size: 1.3rem;
+		width: 90%;
+		max-width: 35rem;
+		padding: 3rem 2rem 1rem;
+		font-size: 1.3rem;
 	}
 }
 
 /* Tablet (736px) */
 @media screen and (max-width: 736px) {
+
 	/* Redução adicional de fontes */
 	h1 {
-			font-size: 1rem;
-			
+		font-size: 1rem;
+
 	}
 
 	h2 {
-			font-size: 1.2rem;
+		font-size: 1.2rem;
 	}
 
 	p {
-			font-size: 0.9rem;
+		font-size: 0.9rem;
 	}
 
 	/* Ajustes de espaçamento */
-	
+
 
 	/* Redução do logo */
 	#header .logo {
-			height: 100px;
-			transform: translateY(-8rem);
+		height: 100px;
+		transform: translateY(-8rem);
 	}
 
 	/* Ajuste nos botões */
 	.custom-nav ul li {
-			max-width: 400px;
+		max-width: 400px;
 	}
 
 	.custom-button {
-			padding: 0.6rem 2rem;
-			font-size: 0.85rem;
+		padding: 0.6rem 2rem;
+		font-size: 0.85rem;
 	}
 }
 
 /* Mobile (480px) */
 @media screen and (max-width: 480px) {
 	/* Redução máxima de fontes */
-	
+
 
 	h2 {
-			font-size: 1.1rem;
+		font-size: 1.1rem;
 	}
 
 	p {
-			font-size: 0.8rem;
+		font-size: 0.8rem;
 	}
 
 	/* Ajustes finais de layout */
 	#header .logo {
-			height: 80px;
-			transform: translateY(-9rem);
+		height: 80px;
+		transform: translateY(-9rem);
 	}
 
 	#header .content .inner h1 {
 		font-size: 1.6rem;
-			
+
 	}
 
 	/* Botões mais compactos */
 	.custom-nav ul li {
-			max-width: 300px;
+		max-width: 300px;
 	}
 
 	.custom-button {
-			padding: 0.5rem 0.8rem;
-			font-size: 0.8rem;
+		padding: 0.5rem 0.8rem;
+		font-size: 0.8rem;
 	}
 
 	/* CTA menor */
 	.button {
-			--width: 150px;
-			--height: 50px;
-			--tooltip-height: 40px;
-			--tooltip-width: 80px;
+		--width: 150px;
+		--height: 50px;
+		--tooltip-height: 40px;
+		--tooltip-width: 80px;
 	}
 
 	#main article {
-			padding: 2.5rem 1.5rem 1rem;
-			font-size: 1.1rem;
+		padding: 2.5rem 1.5rem 1rem;
+		font-size: 1.1rem;
 	}
 }
